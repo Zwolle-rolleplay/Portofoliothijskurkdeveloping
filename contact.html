@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — Thijs Kurk</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="mct-background" aria-hidden="true"></div>
+<nav class="nav">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="24" height="24" rx="5" fill="white" opacity="0.06"/>
+        <path d="M6 16 L10 6 L14 16 Z" fill="white"/>
+      </svg>
+    </div>
+    <div>
+      <div class="name">Thijs Kurk</div>
+      <div style="font-size:12px;color:rgba(234,240,255,0.7);font-weight:600">Minecraft Plugin Developer</div>
+    </div>
+  </div>
+  <div class="navlinks">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projecten</a>
+    <a href="about.html">Over</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="page-header container">
+  <h1 class="section-title">Contact</h1>
+  <p style="color:rgba(234,240,255,0.75)">Interesse in een plugin of ondersteuning? Laat een bericht achter.</p>
+</header>
+
+<main class="container">
+  <section style="max-width:760px;margin:auto;background:rgba(255,255,255,0.02);padding:18px;border-radius:12px">
+    <form id="contactForm">
+      <label>Naam</label>
+      <input name="name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff;margin-bottom:10px">
+      <label>Email</label>
+      <input name="email" required type="email" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff;margin-bottom:10px">
+      <label>Bericht</label>
+      <textarea name="message" required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:#fff;margin-bottom:10px;min-height:120px"></textarea>
+      <div style="display:flex;gap:12px">
+        <button class="btn btn-primary" type="submit">Verstuur</button>
+        <button class="btn" type="reset">Reset</button>
+      </div>
+      <div id="formStatus" style="margin-top:10px;color:rgba(234,240,255,0.8)"></div>
+    </form>
+  </section>
+</main>
+
+<footer class="footer" style="padding:40px 18px;text-align:center;color:rgba(234,240,255,0.6)">
+  &copy; 2025 Thijs Kurk
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
